@@ -5,22 +5,36 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
-    <title>Kurshemsida</title>
+    <title>Code Academy</title>
 </head>
 
 <body>
     <!--Header med navigering-->
     <header>
-        <nav>
-            <ul>
-                <li><a href="startsida.html">Hem</a></li>
-                <li><a href="anmälan.html">Kursanmälan</a></li>
-                <li><a href="kursöversikt.html">Kursöversikt</a></li>
-                <li><a href="kontakt.html">Kontakta oss</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar">
+            <div class="navbar_container" <a href="/startsida.html" id="navbar_logo">Code Academy</a>
+                <div class="navbar_toggle" id="mobile-menu" <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+
+                    <div>
+                        <ul class="navbar_menu">
+                            <li class="navbar_btn">
+                                <a href="/startsida.html" class="navbar_links">Startsida</a>
+                            </li>
+                            <li class="navbar_btn">
+                                <a href="/anmälan.html" class="navbar_links">Kursanmälan</a>
+                            </li>
+                            <li class="navbar_btn">
+                                <a href="/kursöversikt.html" class="navbar_links">kursöversikt</a>
+                            </li>
+                            <li class="navbar_btn">
+                                <a href="/kontakt.html" class="navbar_links">Kontakta oss</a>
+                            </li>
+                        </ul>
+                    </div>
     </header>
-    <h1>Code Academy</h1>
+
     <p>World Wide Web (WWW) är ett system av sammankopplade dokument och resurser som nås via internet. Det skapades av
         Tim Berners-Lee 1989 och bygger på hypertext, vilket gör att användare kan navigera mellan olika webbsidor genom
         att klicka på länkar. Webben använder sig av HTTP-protokollet (HyperText Transfer Protocol) för att överföra
@@ -28,9 +42,10 @@
         Language) och kan innehålla text, bilder, videor och andra typer av media. Kort sagt, World Wide Web är det
         system som gör att vi kan surfa på nätet och se innehåll som webbsidor.</p>
 
-        <footer>
-            <p>&copy; Code Academy 2024</p>
-        </footer>
+    <!--Footer med copyright-->
+    <footer>
+        <p>&copy; Code Academy 2024</p>
+    </footer>
 </body>
 
 </html>
