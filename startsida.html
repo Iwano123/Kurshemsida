@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Academy</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
@@ -15,26 +15,28 @@
     <!--Header med navigering-->
     <nav class="navbar">
         <div class="navbar_container">
-            <a href="/startsida.html" id="navbar_logo"><i class="fas fa-gem"></i>Code Academy</a>
+            <a href="startsida.html" id="navbar_logo"><i class="fas fa-gem"></i>Code Academy</a>
             <div class="navbar_toggle" id="mobile-menu">
                 <span class="bar"></span> <span class="bar"></span>
                 <span class="bar"></span>
-
-                <div>
-                    <ul class="navbar_menu">
-                        <li class="navbar_btn">
-                            <a href="/startsida.html" class="navbar_links">Startsida</a>
-                        </li>
-                        <li class="navbar_btn">
-                            <a href="/anmälan.html" class="navbar_links">Kursanmälan</a>
-                        </li>
-                        <li class="navbar_btn">
-                            <a href="/kursöversikt.html" class="navbar_links">Kursöversikt</a>
-                        </li>
-                        <li class="navbar_btn"><a href="/kontakt.html" class="button">Kontakt</a></li>
-                    </ul>
-                </div>
+            </div>
+            <div>
+                <ul class="navbar_menu">
+                    <li class="navbar_btn">
+                        <a href="startsida.html" class="navbar_links">Startsida</a>
+                    </li>
+                    <li class="navbar_btn">
+                        <a href="anmälan.html" class="navbar_links">Kursanmälan</a>
+                    </li>
+                    <li class="navbar_btn">
+                        <a href="kursöversikt.html" class="navbar_links">Kursöversikt</a>
+                    </li>
+                    <li class="navbar_btn"><a href="kontakt.html" class="button">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
+
 
     <!-- Hero Section -->
     <div class="main">
@@ -43,19 +45,25 @@
                 <h1>Lär dig koda redan idag</h1>
                 <h2>AI-drivna kurser</h2>
                 <p>Ta din framtid till nästa steg.</p>
-                <button class="main_btn"><a href="/anmälan.html">Anmäl dig här</a></button>
+                <button class="main_btn"><a href="anmälan.html">Anmäl dig här</a></button>
             </div>
             <div class="main_img--container">
-                <img id="main_img" src="images/pic1.svg" />
+                <img id="main_img" src="pic1.svg" />
             </div>
         </div>
     </div>
 
-    <script src="app.js"></script>
+
     <!--Footer med copyright-->
-    <footer>
-        <p>&copy; Code Academy 2024</p>
-    </footer>
+    <div class="footer_container">
+        <div class="footer_links">
+            <div class="footer_link--wrapper">
+                <a href="startsida.html" id="footer_logo"><i class="fas fa-gem"></i>Code Academy</a>
+            </div>
+            <p class="website_rights">© Code Academy. All rights reserved</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
