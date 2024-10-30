@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="sv">
 
 <head>
@@ -15,7 +15,7 @@
     <!--Header med navigering-->
     <nav class="navbar">
         <div class="navbar_container">
-            <a href="/startsida.html" id="navbar_logo"><i class="fas fa-gem"></i>Code Academy</a>
+            <a href="startsida.html" id="navbar_logo"><i class="fas fa-gem"></i>Code Academy</a>
             <div class="navbar_toggle" id="mobile-menu">
                 <span class="bar"></span> <span class="bar"></span>
                 <span class="bar"></span>
@@ -23,15 +23,66 @@
                 <div>
                     <ul class="navbar_menu">
                         <li class="navbar_btn">
-                            <a href="/startsida.html" class="navbar_links">Startsida</a>
+                            <a href="startsida.html" class="navbar_links">Startsida</a>
                         </li>
                         <li class="navbar_btn">
-                            <a href="/anmälan.html" class="navbar_links">Kursanmälan</a>
+                            <a href="anmälan.html" class="navbar_links">Kursanmälan</a>
                         </li>
                         <li class="navbar_btn">
-                            <a href="/kursöversikt.html" class="navbar_links">Kursöversikt</a>
+                            <a href="kursöversikt.html" class="navbar_links">Kursöversikt</a>
                         </li>
-                        <li class="navbar_btn"><a href="/kontakt.html" class="button">Kontakt</a></li>
+                        <li class="navbar_btn"><a href="kontakt.html" class="button">Kontakt</a></li>
                     </ul>
                 </div>
+
+
+
     </nav>
+
+
+    <!--Formulär-->
+    <div class="form_container">
+        <h2>Anmälan till kurser</h2>
+        <form class="course_form" action="#" method="post">
+            <label for="name">Namn</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-postadress</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefonnummer</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="course">Kursval</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>Välj en kurs</option>
+                <option value="kommunikation">Kommunikation och affärsmannaskap</option>
+                <option value="programmering-grund">Programmering Grund</option>
+                <option value="javascript-html">Javascript och HTML</option>
+                <option value="utvecklingsmetoder">Utvecklingsmetoder</option>
+                <option value="informationsarkitektur">Informationsarkitektur och databasutveckling</option>
+                <option value="it-sakerhet">IT-säkerhet för utvecklare</option>
+                <option value="webb-mobil">Webbapplikationer och mobil utveckling</option>
+                <option value="examensarbete">Examensarbete</option>
+            </select>
+
+            <label for="comments">Ytterligare kommentarer</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Eventuella kommentarer..."></textarea>
+
+            <button type="submit" class="submit_button">Skicka anmälan</button>
+        </form>
+    </div>
+
+    <!--Footer med copyright-->
+    <div class="footer_container">
+        <div class="footer_links">
+            <div class="footer_link--wrapper">
+                <a href="startsida.html" id="footer_logo"><i class="fas fa-gem"></i>Code Academy</a>
+            </div>
+            <p class="website_rights">© Code Academy 2024. All rights reserved</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

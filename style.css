@@ -235,7 +235,7 @@
 .main_content h1 {
   font-size: 4rem;
   background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-image: linear-gradient(to top, #ff0844 0%, #7d93f8 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -417,4 +417,85 @@
   background-color: #4837ff;
   color: #fff;
   transition: background-color 0.3s ease;
+}
+
+
+/* css för formulär */
+
+.form_container {
+  background-color: #131313;
+  color: #fff;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.form_container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f77062;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.course_form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  margin-left: 15%;
+  color: #fff;
+}
+
+.course_form input[type="text"],
+.course_form input[type="email"],
+.course_form input[type="tel"],
+.course_form select,
+.course_form textarea {
+  width: 70%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: #2c2c2c;
+  border: 1px solid #4837ff;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.course_form input::placeholder,
+.course_form textarea::placeholder {
+  color: #ccc;
+}
+
+.course_form select {
+  appearance: none;
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+.course_form .submit_button {
+  background-color: #f77062;
+  border: none;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.course_form .submit_button:hover {
+  background-color: #4837ff;
+}
+
+.course_form input:focus,
+.course_form select:focus,
+.course_form textarea:focus {
+  outline: none;
+  border-color: #ff8177;
+  box-shadow: 0 0 5px rgba(255, 129, 119, 0.5);
 }
