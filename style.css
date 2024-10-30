@@ -499,3 +499,17 @@
   border-color: #ff8177;
   box-shadow: 0 0 5px rgba(255, 129, 119, 0.5);
 }
+
+/* Contact us CSS*/
+
+.contact_img--container {
+  display: flex;
+  justify-content: right;
+  text-align: center;
+}
+
+#contact_img {
+  height: 40%;
+  width: 40%;
+}
+
