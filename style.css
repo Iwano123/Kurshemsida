@@ -399,7 +399,8 @@
   color: #fff;
 }
 
-.courses_table th, .courses_table td {
+.courses_table th,
+.courses_table td {
   padding: 1rem;
   border: 1px solid #fff;
   text-align: center;
@@ -500,16 +501,85 @@
   box-shadow: 0 0 5px rgba(255, 129, 119, 0.5);
 }
 
-/* Contact us CSS*/
-
+/* Bildstil för att hålla den på höger sida */
 .contact_img--container {
-  display: flex;
-  justify-content: right;
+  max-width: 500px;
   text-align: center;
 }
 
 #contact_img {
-  height: 40%;
-  width: 40%;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
+/* Contact us CSS*/
+
+.contact_section {
+  display: flex;
+  align-items: flex-start;
+  /* Justera vertikalt för att placera i början */
+  justify-content: center;
+  gap: 2rem;
+  /* Mellanrum mellan formulär och bild */
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.form_contact_container {
+  background-color: #131313;
+  color: #fff;
+  padding: 2rem;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form_contact_container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f77062;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Formulärstil */
+.contact_form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #f77062;
+}
+
+.contact_form input[type="text"],
+.contact_form input[type="email"],
+.contact_form input[type="tel"],
+.contact_form textarea {
+  width: 100%;
+  /* Anpassa bredden till formulärets bredd */
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: #2c2c2c;
+  border: 1px solid #4837ff;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.contact_form .submit_button1 {
+  background-color: #f77062;
+  border: none;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact_form .submit_button1:hover {
+  background-color: #4837ff;
+}
