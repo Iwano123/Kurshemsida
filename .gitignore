@@ -1,0 +1,35 @@
+# Systemfiler
+.DS_Store
+Thumbs.db
+
+# Ignorera IDE-specifika filer och mappar
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignorera loggfiler
+*.log
+
+# Ignorera tillfälliga filer
+*.tmp
+*.swp
+
+# Ignorera cache och andra tillfälliga filer
+.sass-cache/
+*.cache
+*.bak
+
+# Ignorera bygg- och distributionsmappar (om du använder ett byggverktyg)
+dist/
+build/
+
+# Ignorera node_modules om du skulle använda Node.js i framtiden
+node_modules/
+
+# Ignorera känsliga miljökonfigurationsfiler
+.env
+
+# Ignorera minifierade och genererade filer (om du minifierar CSS/JS)
+*.min.css
+*.min.js
