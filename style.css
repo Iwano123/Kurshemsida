@@ -271,8 +271,8 @@
 
 .courses_table th,
 .courses_table td {
-  padding: 1rem;
-  border: 1px solid #fff;
+  padding: 1.1rem;
+  border: 1px solid #131313;
   text-align: center;
 }
 
@@ -594,7 +594,7 @@
   }
 
   .courses_container {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .courses_table {
