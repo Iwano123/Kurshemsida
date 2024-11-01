@@ -464,6 +464,7 @@
   }
 }
 
+/* För skärmar mindre än 768px */
 @media screen and (max-width: 768px) {
   .navbar_menu {
     display: none;
@@ -495,6 +496,7 @@
   }
 }
 
+/* För skärmar mindre än 480px */
 @media screen and (max-width: 480px) {
   .navbar_container {
     padding: 0 20px;
@@ -526,10 +528,41 @@
   }
 }
 
-/* Specifik media query för iPhone 14 Pro Max (430 x 932) */
+/* Specifik media query för iPhone 14 Pro Max (430px x 932px) */
 @media screen and (max-width: 430px) {
   .navbar_menu {
-    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #131313;
+    position: fixed; /* Gör menyn fast på sidan */
+    top: 0;
+    left: -100%; /* Skjut menyn helt åt vänster utanför skärmen */
+    width: 100%;
+    height: 100%;
+    padding-top: 80px; /* Ge utrymme för headern */
+    transition: 0.3s; /* Animering för mjuk övergång */
+    z-index: 99;
+  }
+  
+  .navbar_menu.active {
+    left: 0; /* Skjut in menyn så att den täcker hela skärmen */
+  }
+  
+  .navbar_toggle {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    z-index: 100; /* Se till att knappen är över menyn */
+  }
+  
+  .navbar_toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
   }
 
   .main_container {
@@ -551,5 +584,69 @@
   .main_btn {
     padding: 8px 16px;
     font-size: 0.8rem;
+  }
+
+  .courses_container {
+    padding: 1rem;
+  }
+
+  .courses_table {
+    font-size: 0.6rem;
+    /* Minska teckenstorleken för bättre läsbarhet */
+    width: 100%;
+    /* Låter tabellen ta hela bredden */
+  }
+
+  .courses_table th,
+  .courses_table td {
+    padding: 0.5rem;
+    /* Minskar padding för att spara utrymme */
+  }
+
+  .courses_table thead tr {
+    font-size: 0.9rem;
+    /* Justera rubrikens teckenstorlek */
+  }
+
+  .footer_container {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .footer_links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer_logo {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .contact_section {
+    flex-direction: column;
+    gap: 1rem;
+    /* Minskat mellanrum mellan formulär och bild */
+    padding: 1rem;
+  }
+
+  .form_contact_container {
+    width: 100%;
+    /* Anpassa bredden för att ta hela skärmen */
+    padding: 1.5rem;
+    /* Minska padding för bättre layout */
+  }
+
+  .contact_img--container {
+    width: 100%;
+    /* Justera bildens container för att ta hela bredden */
+    text-align: center;
+  }
+
+  #contact_img {
+    width: 80%;
+    /* Anpassa bildens storlek */
+    max-width: 300px;
+    /* Sätt en maxbredd för att hålla bilden hanterbar */
   }
 }
