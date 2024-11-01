@@ -463,3 +463,65 @@
     font-size: 1rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .navbar_menu {
+    display: none;
+    flex-direction: column;
+    background-color: #131313;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 99;
+  }
+
+  .navbar_menu.active {
+    display: flex;
+  }
+
+  .navbar_toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar_toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar_container {
+    padding: 0 20px;
+  }
+
+  #navbar_logo {
+    font-size: 1.5rem;
+  }
+
+  .navbar_links {
+    padding: 1rem;
+  }
+
+  .main_content h1 {
+    font-size: 2.5rem;
+  }
+
+  .main_content h2 {
+    font-size: 2rem;
+  }
+
+  .main_content p {
+    font-size: 1.5rem;
+  }
+
+  .main_btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
