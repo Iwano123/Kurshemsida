@@ -525,3 +525,31 @@
     font-size: 0.9rem;
   }
 }
+
+/* Specifik media query för iPhone 14 Pro Max (430 x 932) */
+@media screen and (max-width: 430px) {
+  .navbar_menu {
+    font-size: 1rem;
+  }
+
+  .main_container {
+    padding: 0 20px;
+  }
+
+  .main_content h1 {
+    font-size: 2rem;
+  }
+
+  .main_content h2 {
+    font-size: 1.8rem;
+  }
+
+  .main_content p {
+    font-size: 1.2rem;
+  }
+
+  .main_btn {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+}
