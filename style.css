@@ -453,3 +453,13 @@
   background-color: #4837ff;
 }
 
+/* Media Queries för mindre skärmar */
+@media screen and (max-width: 1024px) {
+  .navbar_container {
+    padding: 0 30px;
+  }
+
+  .navbar_menu {
+    font-size: 1rem;
+  }
+}
